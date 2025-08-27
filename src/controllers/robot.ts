@@ -12,7 +12,7 @@ export default async function robotController(req: any, res: any): Promise<any> 
 }
 
 async function robotHelper(url: any): Promise<any> {
-    const newUrl = new URL("/robot.txt", url).toString()
+    const newUrl = new URL("/robots.txt", url).toString()
     const response = await fetch(newUrl);
 
     if (!response.ok) {

@@ -8,4 +8,3 @@ export const analyzingRouter = express.Router()
 analyzingRouter.post("/ssr", serverSideController)
 analyzingRouter.post("/crawlers", crawlerController)
 analyzingRouter.post("/robot", robotController)
-
